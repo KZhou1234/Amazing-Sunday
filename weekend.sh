@@ -77,9 +77,8 @@ select weather in "Sunny day" "Rainy day" "exit"; do
                                     select action in "check news online" "ask a random person" "exit"; do
                                         case $action in
                                             "check news online")
-                                                echo "hemm, that's wired! Let me check what's happend! Ke then"
-                                                echo "Oh, there is a food festival nearby, people are go there. Ke also want to take a look. "
-                                                echo "The food are nice! after eat a lot of delicious food, Ke go back happy."
+                                                echo "hemm, that's a little strange! Let me check what's happend!"
+                                                echo "Oh, there is a food festival nearby, people are heading there. Ke also want to take a look. "
                                                 echo "Ke found there are so many choices, she want to eat all of them! There are "
                                                 for item in "${menu[@]}"; do
                                          
