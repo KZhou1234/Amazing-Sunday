@@ -10,12 +10,14 @@ select weather in "Sunny day" "Rainy day" "exit"; do
             select plan in "Go to Central Park" "Stay Home" "exit"; do
                 case $plan in
                     "Go to Central Park")
-                        echo "Ke decides to head out on her own to enjoy the day in Central Park. /nShe was looking forward to enjoying the beautiful scenery, /nor taking a leisurely walk in the park."
+                        echo "Ke decides to head out on her own to enjoy the day in Central Park. "
+                        echo "She was looking forward to enjoying the beautiful scenery, or taking a leisurely walk in the park."
                         echo "After she got to the park and realized that"
                         select people in "so many people today" "it's too quiet today" "exit"; do
                             case $people in
                                 "so many people today")
-                                    echo "This crowd was really surprising. Ke wonders if there was a special event, festival, /nor big outdoor concert in Central Park today. /n It's unusual to see so many people on just one weekend."
+                                    echo "This crowd was really surprising. Ke wonders if there was a special event, festival, or big outdoor concert in Central Park today. "
+                                    echo "It's unusual to see so many people on just one weekend."
                                     echo "By checking the events in Central Park today, Ke finds that there is a"
                                     select event in "concert" "food festival" "exit"; do
                                         case $event in
@@ -30,7 +32,8 @@ select weather in "Sunny day" "Rainy day" "exit"; do
                                                 
                                                     echo "I wish I could meet $name as well! I unexpectedly met Lisa."
                                                 fi
-                                                echo "What an amazing day! The weather is perfect, and Central Park is buzzing with so much energy and excitement./n Ke has had a great time exploring and taking in all the sights. She can’t wait to tell friends all about it and share some of the pictures and stories from today.!"
+                                                echo "What an amazing day! The weather is perfect, and Central Park is buzzing with so much energy and excitement."
+                                                echo " Ke has had a great time exploring and taking in all the sights. She can’t wait to tell friends all about it and share some of the pictures and stories from today.!"
                                                 exit 0
                                                 ;;
                                             "food festival")
@@ -75,7 +78,8 @@ select weather in "Sunny day" "Rainy day" "exit"; do
                                         case $action in
                                             "check news online")
                                                 echo "hemm, that's wired! Let me check what's happend! Ke then"
-                                                echo "Oh, there is a food festival nearby, people are go there. Ke also want to take a look. /nThe food are nice! after eat a lot of delicious food, Ke go back happy."
+                                                echo "Oh, there is a food festival nearby, people are go there. Ke also want to take a look. "
+                                                echo "The food are nice! after eat a lot of delicious food, Ke go back happy."
                                                 echo "Ke found there are so many choices, she want to eat all of them! There are "
                                                 for item in "${menu[@]}"; do
                                          
@@ -87,12 +91,13 @@ select weather in "Sunny day" "Rainy day" "exit"; do
                                                     echo "- ${shuffled_menu[count]}"
                                                     count=$((count+1))
                                                 done
-                                                echo -e "Ke is so happy to be at this event and is already checking the schedule for the next festival. /nIt’s a great idea to come with friends next time!"                                             
+                                                echo -e "Ke is so happy to be at this event and is already checking the schedule for the next festival. "
+                                                echo "It’s a great idea to come with friends next time!"                                             
                                                 exit 0;
                                                 ;;
                                            
                                             "ask a random person")
-                                                echo " No one seems to know what's going on. Ke walks around for a while. The view in Central Park is amazing, /nbut it’s not as lively as it used to be. So, Ke decides to head back home."
+                                                echo -e " No one seems to know what's going on. Ke walks around for a while. The view in Central Park is amazing, but it’s not as lively as it used to be. So, Ke decides to head back home."
                                                 echo "Everything feels abnormal, and Ke is so tired that she falls asleep on the train."
                                                 echo "Suddenly, her phone rings."
                                                 echo "If you wish to continue please enter "yes""
